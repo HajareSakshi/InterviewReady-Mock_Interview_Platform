@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewReady</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .logo h1 {
+      font-size: 1.2rem;
+      color: #333;
+      margin: 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #00a884;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 20px;
+    }
+
+    .content {
+      max-width: 50%;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background: #00a884;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #008c6a;
+    }
+
+    .image {
+      max-width: 50%;
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      main {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content,
+      .image {
+        max-width: 100%;
+      }
+
+      .content {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+
+
+
+        <h1>InterviewReady</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <!-- <li><a href="profile.html">Profile</a></li> -->
+        <li><a href="help.html">Help & Support</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <h1>Be Interview-Ready: Shine with Confidence!</h1>
+      <p>Get started with your interview preparation journey and ace your next big opportunity!</p>
+      <a href="login.html" class="btn">Get Started</a>
+    </div>
+    <div class="image">
+      <img src="undraw_Interview_re_e5jn (1).png" alt="Interview Illustration">
+    </div>
+  </main>
+
+  <script>
+   

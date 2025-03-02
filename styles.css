@@ -1,0 +1,361 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Aligns the navbar content to the left */
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 2px solid #0097c9;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 3D effect with shadow */
+    transition: background-color 0.3s ease; /* Transition effect for background */
+}
+
+.navbar:hover {
+    background-color: #e0f7fa; /* Hover effect for the entire navbar */
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Ensures the logo stays on the left */
+}
+
+.navbar .logo i {
+    font-size: 28px; /* Increased size for better visibility */
+    margin-right: 10px;
+    color: #0097c9; /* Add color to icon */
+    transition: transform 0.3s ease; /* Transition effect for the icon */
+}
+
+.navbar .logo i:hover {
+    transform: scale(1.2); /* 3D hover effect for the logo icon */
+}
+
+.navbar .logo span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 30px; /* Increase spacing between links */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px; /* Slightly larger text */
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for smooth hover effects */
+    position: relative;
+}
+
+.navbar .nav-links a:hover {
+    color: #0093c9; /* Color change on hover */
+    transform: translateY(-5px); /* 3D lift effect on hover */
+}
+
+.navbar .nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #0090c9;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-links a:hover::before {
+    width: 100%; /* Underline effect grows on hover */
+}
+
+/* Main content styling */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px; /* Adjusted padding to avoid overlap with navbar */
+}
+
+.main-content .text-content {
+    max-width: 50%;
+}
+
+.main-content .text-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.main-content .text-content h1:hover {
+    color: #007fc9; /* Color change on hover */
+}
+
+.main-content .text-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #0050c9, #92e7fe);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-content .text-content .btn:hover {
+    transform: translateY(-3px); /* 3D lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
+}
+
+.main-content .image-content img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.main-content .image-content img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/*create account or login*/
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30;
+    height: 100vh;
+}
+.left-panel {
+    background-color: #b2d2f5;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.left-panel img {
+    width: 100px;
+    height: 100px;
+}
+.left-panel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+.left-panel .illustration {
+    margin-top: 20px;
+    height: 400px;
+    width: 300px;
+}
+.right-panel {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.right-panel h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.right-panel form {
+    width: 100%;
+    max-width: 400px;
+}
+.right-panel form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.right-panel form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.right-panel form button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.right-panel form button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+.right-panel .login-link {
+    margin-top: 10px;
+    text-align: center;
+}
+.right-panel .login-link a {
+    color: blue;
+    text-decoration: none;
+}
+.right-panel .login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Login and Welcome Section */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+.welcome-section {
+    background-color: #c0d9f0;
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-section img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.welcome-section p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.login-section {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-section label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-section .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-section .remember-me input {
+    margin-right: 10px;
+}
+
+.login-section .remember-me label {
+    font-size: 14px;
+    color: #333;
+}
+
+.login-section .forgot-password {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.login-section .login-button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 5px;
+    color: #fff; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-section .login-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* 3D shadow effect on button */
+}
+
+.login-section .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-section .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}

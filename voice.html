@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidence Checking Based on Voice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .confidence-level {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Confidence Checker</h1>
+        <button class="btn" onclick="startVoiceRecognition()">Start Speaking</button>
+        <div class="confidence-level" id="confidenceLevel">Your Confidence: </div>
+    </div>
+
+    <script>
+        // Web Speech API Speech Recognition Setup
+        const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognition.lang = "en-US";
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 1;
+
+        // Start Speech Recognition
+        function startVoiceRecognition() {
+            recognition.start();
+            recognition.onstart = () => {
+                document.getElementById('confidenceLevel').textContent = "Listening... Speak clearly!";
+            };
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                console.log("Transcript: ", transcript);
+                analyzeSpeechConfidence(transcript);
+            };
+            recognition.onerror = (event) => {
+                console.error("Error occurred: ", event.error);
+            };
+        }
+
+        // Function to analyze speech and determine confidence level
+        function analyzeSpeechConfidence(text) {
+            // Basic analysis (For demo purposes, more complex analysis would require advanced libraries)
+            const confidence = getConfidenceFromText(text);
+            const confidenceLevelElement = document.getElementById("confidenceLevel");
+
+            if (confidence > 75) {
+                confidenceLevelElement.textContent = `Your Confidence: Very High 💪`;
+                confidenceLevelElement.style.color = "green";
+            } else if (confidence > 50) {
+                confidenceLevelElement.textContent = `Your Confidence: Moderate 👍`;
+                confidenceLevelElement.style.color = "orange";
+            } else {
+                confidenceLevelElement.textContent = `Your Confidence: Low 😟`;
+                confidenceLevelElement.style.color = "red";
+            }
+        }
+
+        // Dummy confidence score function based on speech text (this can be extended with advanced analysis)
+        function getConfidenceFromText(text) {
+            const positiveWords = ['confident', 'strong', 'sure', 'certain', 'positive'];
+            const negativeWords = ['hesitant', 'unsure', 'doubt', 'weak', 'nervous'];
+
+            let score = 50; // Base score for moderate confidence
+
+            // Count occurrences of positive and negative words in the text
+            const positiveCount = positiveWords.reduce((count, word) => count + (text.toLowerCase().includes(word) ? 1 : 0), 0);
+            const negativeCount = negativeWords.reduce((count, word) => count + (text.toLowerCase().includes(word) ? 1 : 0), 0);
+
+            // Adjust score based on the word count
+            score += (positiveCount - negativeCount) * 10;
+            score = Math.max(0, Math.min(100, score));  // Ensure the score stays between 0 and 100
+
+            return score;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+Question,Answer
+What is C++?,"C++ is a general-purpose programming language developed as an extension of C, providing object-oriented features."
+What is a namespace in C++?,A namespace is a declarative region that provides a scope to identifiers to avoid naming conflicts.
+What is the difference between C and C++?,"C++ supports object-oriented programming, while C is procedural. C++ also includes features like classes and objects."
+What is OOP in C++?,"OOP (Object-Oriented Programming) is a paradigm based on classes and objects, supporting concepts like inheritance and polymorphism."
+What is a class in C++?,A class is a blueprint for creating objects and defines properties and behaviors of objects.
+What is an object in C++?,"An object is an instance of a class, representing an entity with data and functions."
+Explain inheritance in C++.,Inheritance is a feature where a class can inherit attributes and methods from another class.
+What is polymorphism in C++?,"Polymorphism allows objects to be treated as instances of their parent class, with functions having different behaviors."
+What is encapsulation?,Encapsulation is the concept of wrapping data and methods into a single unit or class.
+What is abstraction?,Abstraction hides implementation details and shows only functionality to the user.
+Define a constructor in C++.,"A constructor is a special function called when an object is instantiated, used to initialize objects."
+What is a destructor in C++?,"A destructor is a special function that is called when an object is destroyed, used for cleanup."
+What is function overloading?,Function overloading allows multiple functions with the same name but different parameters.
+What is operator overloading?,Operator overloading allows operators to be defined for user-defined data types.
+What is the difference between 'struct' and 'class'?,"In 'struct', members are public by default; in 'class', they are private by default."
+What are access specifiers?,"Access specifiers (public, private, protected) control the visibility of class members."
+What is the use of 'this' pointer?,'this' pointer refers to the current instance of a class.
+"What is the difference between public, private, and protected?","Public allows access from outside the class, private restricts access, and protected allows access to derived classes."
+What is an inline function?,An inline function is expanded at the point of invocation to reduce function call overhead.
+What is a friend function?,A friend function can access private and protected members of a class.
+What is a virtual function?,A virtual function is used to achieve runtime polymorphism in inheritance.
+Explain pure virtual functions.,A pure virtual function has no implementation and makes a class abstract.
+What is an abstract class?,An abstract class contains at least one pure virtual function and cannot be instantiated.
+What is dynamic binding?,Dynamic binding refers to linking a function call to the code to be executed at runtime.
+Explain static binding.,Static binding links the function call to the code at compile time.
+What is the purpose of 'new' and 'delete' operators?,"'new' allocates memory dynamically, while 'delete' frees dynamically allocated memory."
+What is the role of 'const' keyword?,'const' keyword is used to define constant variables or prevent changes to data.
+What is a reference in C++?,"A reference is an alias for another variable, often used for passing parameters."
+What are templates in C++?,Templates allow writing generic programs that work with any data type.
+What is exception handling?,"Exception handling is a mechanism to handle runtime errors using try, catch, and throw."
+What is a try-catch block?,"A try-catch block is used to handle exceptions, with 'try' to test code and 'catch' to handle errors."
+What is the 'throw' keyword?,'throw' is used to signal the occurrence of an error or exception.
+What is STL in C++?,STL (Standard Template Library) is a library providing data structures and algorithms.
+What is a vector in C++?,A vector is a dynamic array that can resize itself when elements are added or removed.
+What is a pointer in C++?,A pointer is a variable that stores the address of another variable.
+Explain the concept of memory management.,Memory management refers to allocation and deallocation of memory at runtime.
+What is a linked list?,A linked list is a data structure where elements are nodes linked by pointers.
+What is recursion?,Recursion is a function that calls itself to solve a problem in smaller instances.
+What are function pointers?,Function pointers store the address of a function and can be used to invoke functions.
+What is the difference between '==' and '===' operators in C++?,"'==' checks for equality, while '===' does not exist in C++ (only in some other languages)."
+What is the 'static' keyword?,'static' keyword restricts visibility to the scope of its definition and persists value.
+What is a static variable?,A static variable retains its value across function calls.
+What is a static function?,A static function is restricted to the file or class in which it is defined.
+What is type casting?,Type casting converts one data type to another.
+What is a copy constructor?,A copy constructor initializes an object by copying another object of the same type.
+What is a move constructor?,A move constructor transfers resources from a temporary object to a new one.
+What is the difference between shallow copy and deep copy?,"Shallow copy copies only the address, while deep copy duplicates the entire data."
+Explain the 'volatile' keyword.,'volatile' keyword prevents compiler optimization for specific variables.
+What is a smart pointer?,A smart pointer manages memory automatically by using reference counting.
+What is the use of 'nullptr' in C++?,'nullptr' is a keyword used to represent a null pointer in modern C++.

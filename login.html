@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      width: 80%;
+      max-width: 800px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .left {
+      background-color: #17a589;
+      color: white;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .left h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 14px;
+    }
+
+    .right {
+      flex: 1.5;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .form-options a {
+      font-size: 12px;
+      color: #17a589;
+      text-decoration: none;
+    }
+
+    .form-options a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #17a589;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #138d75;
+    }
+
+    .signup {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    .btn {
+      padding: 10px 20px;
+      width: 100%;
+      background: #00a884;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .signup a {
+      color: #17a589;
+      text-decoration: none;
+    }
+
+    .signup a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Welcome Back!</h1>
+      <p>Ready to sharpen your interview skills?</p>
+      <!-- <img src="undraw_Login_re_4vu2.png" height="10%"> -->
+    </div>
+    <div class="right">
+      <h2>Login</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="form-options">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <!-- <button type="submit">Log In</button> -->
+        <a href="interviewinterface.html" class="btn">Log In</a>
+      </form>
+      <div class="signup">
+        Don't have an account? <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </div>
+  <!-- <script>
+    // You can add functionality here if needed
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+    //   alert('succesfully log in!');
+    });
+  </script> -->
+  <script>
+    // Function to handle login and navigate to the next page
+    function handleLogin(event) {
+      event.preventDefault(); // Prevents the form from refreshing the page
+
+      // You can add authentication logic here (e.g., checking username and password)
+
+      // Navigate to the next page (replace 'next-page.html' with the actual file name)
+      window.location.href = 'interviewstartpage.html';
+    }
+  </script>
+</body>
+</html>

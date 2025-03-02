@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Page</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin: 0 10px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a.active {
+      color: #0078D4;
+    }
+
+    .nav-links li a:hover {
+      color: #0078D4;
+    }
+
+    .help-banner {
+      background: #00a884;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .help-banner h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      background: #ff8800;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .search-bar button:hover {
+      background: #ff6f00;
+    }
+
+    .quick-guide {
+      background: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .quick-guide h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .quick-guide ol {
+      list-style-position: inside;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-left: 20px;
+    }
+
+    .quick-guide ol li {
+      margin: 10px 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <h1>InterviewReady</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <!-- <li><a href="#" class="active">Help</a></li> -->
+        <li><a href="#">Log Out</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="help-banner">
+      <h1>We Are Here To Help You!</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Ask here what you want" id="search-input">
+        <button id="search-btn">SEARCH</button>
+      </div>
+    </div>
+
+    <section class="quick-guide">
+      <h2>Mock Interview Process - Quick Guide</h2>
+      <ol>
+        <li><strong>Login</strong> → Access the mock interview.</li>
+        <li><strong>Answer Questions</strong> → Speak responses; they’re converted to text.</li>
+        <li><strong>Evaluation</strong> → Responses are scored on relevance, confidence, and accuracy.</li>
+        <li><strong>Feedback</strong> → Get tips and a summary report to improve.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('search-btn').addEventListener('click', function () {
+      const query = document.getElementById('search-input').value.trim();
+      if (query) {
+        alert(`Searching for: ${query}`);
+      } else {
+        alert('Please enter a query to search!');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Ready</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      margin-left: 50px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #333;
+      display: flex;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .logo{
+      display: flex;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+       display: flex;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #00a884;
+    }
+    .container {
+      text-align: center;
+      margin-top: 50px;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .container h1 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .container h1 span {
+      color: #0073e6;
+    }
+
+    .container p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .container button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container button:hover {
+      background-color: #218838;
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .footer-text a {
+      color: #d9534f;
+      text-decoration: none;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+
+    .next-page {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .next-page h2 {
+      font-size: 28px;
+      color: #0073e6;
+      margin-bottom: 20px;
+    }
+
+    .next-page p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .next-page button {
+      background-color: #0073e6;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn {
+      padding: 10px 20px;
+      background: #00a884;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+ .navbar{
+  display: flex;
+ }
+
+    .next-page button:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+
+        
+
+        <h1>InterviewReady</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="help.html">Help & Support</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="main-content" class="container">
+    <h1>Interview<span>Ready</span></h1>
+    <p>Fast-track your preparation for that upcoming interview.</p>
+    <p>Take your interviewing skills to the next level by working on key questions and refining your approach based on feedback.</p>
+    <!-- <button onclick="showNextPage()">Start Practicing</button> -->
+    <a href="innterviewstartpage.html" class="btn">Start Practicing</a>
+
+    <div class="footer-text">
+      Want to know, How It Works? 
+      <br><a href="help.html">Here's a preview for you to see</a>
+    </div>
+  </div>
+
+  <script>
+    function showNextPage() {
+      // Replace current content with new content for the next page
+      const mainContent = document.getElementById("main-content");
+      mainContent.innerHTML = `
+        <div class="next-page">
+          <h2>Welcome to the Practice Session!</h2>
+          <p>Get ready to practice some key interview questions. Let's refine your skills!</p>
+          <button onclick="startInterview()">Start Interview</button>
+        </div>
+      `;
+    }
+
+    function startInterview() {
+      alert("Starting the interview...");
+      // You can redirect to another page or include further functionality here
+    }
+  </script>
+</body>
+</html>
+

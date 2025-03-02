@@ -1,0 +1,52 @@
+Question,Answer
+What is Java?,"Java is a high-level, class-based, object-oriented programming language."
+Who invented Java?,Java was invented by James Gosling at Sun Microsystems.
+What is JDK in Java?,"JDK stands for Java Development Kit, a software development kit for Java."
+What is JVM in Java?,"JVM stands for Java Virtual Machine, it runs Java bytecode on any platform."
+What is JRE in Java?,"JRE stands for Java Runtime Environment, it provides libraries to run Java apps."
+What are Java primitives?,"Primitives are basic data types like int, char, boolean, and float."
+What is a class in Java?,A class is a blueprint for creating objects in Java.
+What is an object in Java?,An object is an instance of a class with state and behavior.
+What is inheritance in Java?,Inheritance is a mechanism to create a new class using properties of an existing class.
+What is polymorphism in Java?,Polymorphism allows methods to perform different tasks based on the object that calls them.
+What is encapsulation in Java?,Encapsulation is the concept of wrapping data and code into a single unit.
+What is abstraction in Java?,Abstraction is the concept of hiding implementation details and showing only functionality.
+What is a constructor in Java?,A constructor is a special method used to initialize objects.
+What is method overloading?,Method overloading is when multiple methods have the same name but different parameters.
+What is method overriding?,Method overriding is when a subclass provides a specific implementation of a method from a superclass.
+What is 'this' keyword in Java?,'this' refers to the current instance of a class.
+What is 'super' keyword in Java?,'super' refers to the superclass and is used to access its methods and constructors.
+What are Java access modifiers?,"Access modifiers in Java are public, private, protected, and default."
+What is the main() method in Java?,main() method is the entry point of a Java application.
+What is the difference between Java and C++?,"Java is platform-independent, whereas C++ is platform-dependent."
+What is an interface in Java?,An interface is a reference type that contains only abstract methods.
+What is an abstract class in Java?,An abstract class is a class that cannot be instantiated and may contain abstract methods.
+What is a package in Java?,A package is a namespace for organizing classes and interfaces.
+What is an exception in Java?,An exception is an event that disrupts the normal flow of a program.
+What is exception handling?,"Exception handling is managing runtime errors using try, catch, throw, throws, and finally."
+What is try-catch in Java?,try-catch block handles exceptions where try checks and catch handles the exception.
+What is finally block?,finally block executes code after try-catch regardless of exception occurrence.
+What is throw keyword in Java?,throw is used to explicitly throw an exception.
+What is throws keyword in Java?,throws indicates exceptions that a method may throw during its execution.
+What is multithreading in Java?,Multithreading is concurrent execution of two or more threads.
+What is synchronization in Java?,Synchronization is a technique to ensure that only one thread accesses shared resources at a time.
+What is a thread in Java?,A thread is a lightweight process that can be executed independently.
+What is garbage collection in Java?,Garbage collection automatically deallocates unused objects.
+What is finalize() method?,finalize() method is called by the garbage collector before object deletion.
+What is a static variable?,A static variable is shared among all instances of a class.
+What is a static method?,"A static method belongs to the class, not instances of the class."
+What is a String in Java?,String is an object that represents a sequence of characters.
+What is String Pool in Java?,String Pool is a special memory region to store unique strings.
+What is an Array in Java?,An array is a collection of elements of the same type.
+What is ArrayList in Java?,ArrayList is a resizable array implementation in Java.
+What is HashMap in Java?,HashMap stores key-value pairs and allows null values and one null key.
+What is Hashtable in Java?,Hashtable is synchronized and does not allow null values or keys.
+What is LinkedList in Java?,LinkedList is a data structure that consists of nodes connected by pointers.
+What is the 'instanceof' keyword?,'instanceof' checks if an object is an instance of a particular class.
+What is the use of 'final' keyword?,"The 'final' keyword prevents modification of variables, classes, and methods."
+What is the 'equals()' method?,The 'equals()' method checks equality between two objects.
+What is hashCode() method?,hashCode() returns an integer hash code representing an object.
+What is a lambda expression?,Lambda expressions provide a way to implement functional interfaces in a concise manner.
+What is functional interface?,A functional interface has only one abstract method.
+What are streams in Java?,Streams in Java provide a way to process collections of data.
+What is JDBC in Java?,JDBC is an API for connecting and executing queries on a database.
